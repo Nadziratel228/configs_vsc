@@ -1,0 +1,51 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "clang++ сборка и отладка активного файла",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang++ сборка активного файла",
+            "targetArchitecture": "x86_64",
+            "internalConsoleOptions": "openOnSessionStart",
+            "logging": {
+                "moduleLoad": true,
+                "programOutput": true,
+                "trace": false
+            },
+            "externalConsole": true,
+            "osx": {
+                "MIMode": "lldb"
+            }
+        },
+        {
+            "name": "clang сборка и отладка активного файла",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang сборка активного файла",
+            "targetArchitecture": "x86_64",
+            "internalConsoleOptions": "openOnSessionStart",
+            "logging": {
+                "moduleLoad": true,
+                "programOutput": true,
+                "trace": false
+            },
+            "externalConsole": true,
+            "osx": {
+                "MIMode": "lldb"
+            }
+        }
+    ]
+}
